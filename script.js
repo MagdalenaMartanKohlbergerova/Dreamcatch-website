@@ -30,3 +30,23 @@ window.addEventListener("scroll",function(){
         topButton.style.display = "none"
     }
 })
+
+let form = document.querySelector("form")
+let fullNameInput = document.querySelector(".fullName")
+let emailInput = document.querySelector(".userEmail")  
+let notName = document.querySelector(".notificationName")
+let notEmail = document.querySelector(".notificationEmail")
+
+form.addEventListener("submit", function(event){
+    event.preventDefault()
+    console.log(fullNameInput.value)
+    console.log(emailInput.value);
+
+    if (fullNameInput.value == "") {
+        notName.style.display = "block"
+    }
+
+    if (emailInput.value == "") {
+        notEmail.style.display = "block"
+    }
+})
