@@ -18,3 +18,15 @@ window.addEventListener("scroll", function(){
         }
     })
 })
+
+window.addEventListener("scroll",function(){
+    let scrolled = window.scrollY
+
+    let topButton = document.querySelector(".top-page")
+
+    if(Math.ceil(scrolled) > 300){
+        topButton.style.display = "flex"
+    } else{
+        topButton.style.display = "none"
+    }
+})
