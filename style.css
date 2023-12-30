@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-poppins: "Poppins", 'sans-serif';
+    --font-spartan: 'League Spartan', sans-serif;
+    --typewriterSpeed: 2s;
+    --typewriterCharacters: 62;
+    --bg-cover: url('assets/hero.png');
+    --bg-form: url('assets/dreams1.jpg');
+    --btn-bg: rgba(175, 175, 175, 0.39);
+    --btn-text: rgba(0, 0, 0, 0.616);
+    --btn-text-hover: rgba(0, 0, 0, 0.747);   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .2s linear;
+    outline: none;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* '''''''''''''''''''''''''''''''''''''''''''''''''HOME'''''''''''''''''''''''''''''''''''''''''''''''*/
+
+header .navbar {
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem;
+}
+
+header .navbar a {
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-family: var(--font-poppins);
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 15px;
+    color: black;
+}
+
+header .navbar a:hover {
+    background: var(--btn-bg);
+    transform: translateY(-5px);
+    color: var(--btn-text-hover);
+}
+
+header .icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+.logo img{
+    position: absolute;
+    z-index: 999;
+    width: 180px;
+    margin-inline-start: 5%;
+}
+
+main .background {
+    height: 50vh;
+    background-image: linear-gradient(rgba(80, 42, 230, 0.178), rgba(117, 117, 117, 0.445)), url('assets/hero.png');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    position: sticky;
+}
+
+
+@media (max-width: 800px){
+    .logo img{
+        width: 130px;
+        margin-block-start: 6%;
+    }
+
+    header .icon {
+        display: inline-block;
+        z-index: 999;
+        color: white;
+    }
+
+    header .navbar {
+        z-index: 999;
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        background-color: rgba(160, 160, 160, 0.913);
+        display: none;
+        margin-block: 0;
+    }
+
+    nav.navbar.active {
+        display: block;
+    }
+
+    header .navbar a {
+        display: block;
+        text-align: left;
+        color: white;
+        font-weight: 700;
+        font-size: 30px;
+        margin-block: 0.5rem;
+        margin-inline-start: 0.5rem;
+        padding-block: 4%;
+    }
+
+    header .navbar a:hover {
+        transform: translateX(0);
+        background: none;
+        color: white;
+    }
+
+    main .background {
+        height: 100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+}
