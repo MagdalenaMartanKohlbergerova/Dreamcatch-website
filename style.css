@@ -323,6 +323,18 @@ footer .top-page:hover {
 
 /* '''''''''''''''''''''''''''''''''''''''''''''''''HOME'''''''''''''''''''''''''''''''''''''''''''''''*/
 
+/* '''''''''''''''''''''''''''''''''''''''''''''''''AUTHORS'''''''''''''''''''''''''''''''''''''''''''''''*/
+header .banner-portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;       
+}
+
+header .banner-portfolio img{
+    width: 70%;
+    margin: 0 auto;
+}
+
 
 @media (max-width: 800px){
     .logo img{
