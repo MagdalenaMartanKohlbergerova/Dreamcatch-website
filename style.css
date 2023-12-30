@@ -335,6 +335,153 @@ header .banner-portfolio img{
     margin: 0 auto;
 }
 
+main .container-portfolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .article .big {
+    font-size: 65px;
+    margin-top: 0;
+}
+
+main .container-portfolio img{
+    width: 400px;
+    padding: 10px;
+}
+
+main .article .hndmade-title{
+    font-size: 55px;
+    font-family: var(--font-spartan);
+    font-weight: 800;
+    letter-spacing: -2px;
+    padding-block-end: 2rem;
+    padding-block-start: 2rem;
+    text-align: left;
+    margin: 0 auto;
+}
+
+main .lets-btn{
+    cursor: pointer;
+    padding: 15px 30px;
+    font-family: var(--font-poppins);
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--btn-text);
+    text-transform: uppercase;
+    margin-block-start: 5rem;
+    background-color: #e9e9e9c8;
+}
+
+main .photogallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .photogallery img{
+    padding: 5px;
+    width: 240px;
+}
+
+.nature-products{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(0, 1fr)); 
+    width: 950px;
+    margin: 0 auto;
+    padding-block-start: 8rem;
+    padding-block-end: 5rem;
+}
+
+.grid-photo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+}
+
+.nature-products img{
+    width: 100%;
+}
+
+.grid-photo img{
+    filter: grayscale(1) brightness(70%);
+}
+
+.grid-photo img:focus{
+    filter: grayscale(0) ;
+}
+
+.nature-products article h3, h4, h5{
+    font-size: 35px;
+    line-height: 40px;
+    font-family: var(--font-spartan);
+    font-weight: 800;
+    letter-spacing: -2px;
+    text-align: left;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    animation: fadeIn 3s ease 10 normal forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.nature-products article p{
+    font-size: 18px;
+    font-family: var(--font-poppins);
+    text-align: left;
+    padding-inline-end: 3rem;
+    padding-block-end: 2rem;
+    color: rgb(62, 62, 62);
+}
+
+main .article .contact-btn{
+    cursor: pointer;
+    padding: 15px 30px;
+    font-family: var(--font-poppins);
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--btn-text);
+    background-color: #e9e9e9c8;
+    text-transform: uppercase;
+    margin-block-start: 5rem;
+    box-shadow: 0 60px 12px -80px rgba(0, 0, 0, 0.1), 0 60px 20px -12px rgba(0, 0, 0, 0.1);
+    animation: anime 1s infinite ease-in-out alternate;
+    -webkit-animation: anime 1s infinite ease-in-out alternate;
+}
+
+main .article .contact-btn{
+    animation-delay: .3s;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 800px){
     .logo img{
