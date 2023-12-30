@@ -380,14 +380,13 @@ main .lets-btn {
     background-color: #e9e9e9c8;
 }
 
-main .photogallery {
+.gallery .images{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-main .photogallery img {
+.images img {
     padding: 5px;
     width: 240px;
 }
@@ -874,15 +873,17 @@ footer .sale img {
 
     main .container-portfolio img{
         width: 100%;
+        height: 100%;
     } 
 
-    main .photogallery img{
+    /* main .photogallery img{
         padding: 10px;
         width: 100%;
-    }
+    } */
 
-    main .photogallery img:hover{
-        display: none;
+    .images img{
+        width: 100%;
+        padding-inline: 10px;
     }
 }
 
