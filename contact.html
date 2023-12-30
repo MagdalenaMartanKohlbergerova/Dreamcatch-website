@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let me know</title>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="contact">
+
+    <!-- header section start here  -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Domů</a>
+            <a href="authors.html">Autorská tvorba</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fa-solid fa-bars" id="menu-bar"></i>
+        </div>
+    </header>
+    <!-- header section ends here  -->
+
+    <!-- main section starts here  -->
+    <main>
+        <section>
+            <div class="contact-blocks1">
+                <div class="item1">
+                </div>
+
+                <div class="item2">
+                    <article>
+                        <h1>Prodej unikátního umění</h1>
+                        <p>Sny si zaslouží být zachyceny a uchovány. A co lepšího, než mít kus umění, který je tvořen přímo na přání? <strong>Pošli mi nezávaznou objednávku a domluvíme se na podrobnostech.</strong></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contact-blocks2">
+                <div class="item3">
+                </div>
+
+                <div class="item4">
+                    <form action="mailer.php" method="post" class="box">
+                        <div class="message">
+                            <h2>Kontaktuj mě</h2>
+                            <p class="notificationName">Vyplň prosím jméno a příjmení</p>
+                            <p class="notificationEmail">Vyplň prosím email</p>
+                            <input type="text" name="name" placeholder="Jméno a příjmení" class="fullName">
+                            <input type="Email" name="email" placeholder="Email" class="userEmail">
+                            <textarea name="message" cols="30" rows="2"></textarea>
+                            <input class="submit" type="submit" value="Ahoj!">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main section ends here  -->
+
+</body>
+
+</html>
